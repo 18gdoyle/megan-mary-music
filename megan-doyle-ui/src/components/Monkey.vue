@@ -36,13 +36,21 @@ export default {
 
         setInterval(() => {
             let random = this.getRandomInt(100);
-            if (random >= 50) {
-                this.verticalDirection = this.verticalDirection * -1;
+            if (random <= 33) {
+                this.verticalDirection = 1;
+            } else if (random <= 66) {
+                this.verticalDirection = this.verticalDirection = -1;
+            } else {
+                this.verticalDirection = 0;
             }
 
             random = this.getRandomInt(100);
-            if (random >= 50) {
-                this.horizontalDirection = this.horizontalDirection * -1;
+            if (random <= 33) {
+                this.horizontalDirection = 1;
+            } else if (random <= 66) {
+                this.horizontalDirection = -1;
+            } else {
+                this.horizontalDirection = 0;
             }
         }, 1000);
 
