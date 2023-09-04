@@ -5,11 +5,11 @@ import Monkey from '../components/Monkey.vue'
 <template>
   <div style="height: 100%; width: 100%;">
     <audio id="monkeyTime">
-      <source src="../assets/cyclone clipped.mp3" type="audio/mpeg">
+      <source src="/cycloneClipped.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <audio id="alarm">
-      <source src="../assets/alarm.mp3" type="audio/mpeg">
+      <source src="/alarm.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <div v-if="firstClick" style="display: flex; height: 100%; width: 100%; align-items: center; justify-content: center;">

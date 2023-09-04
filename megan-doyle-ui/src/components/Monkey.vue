@@ -32,7 +32,7 @@ export default {
             this.y = this.getRandomInt(window.innerWidth - monkey.width);
             this.animateMonkey(monkey);
         }
-        monkey.src = '/src/assets/monkey1.png'
+        monkey.src = '/monkey1.png'
 
         setInterval(() => {
             let random = this.getRandomInt(100);
