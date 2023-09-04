@@ -62,6 +62,14 @@ export default {
             }
         })
 
+        window.addEventListener('touchstart', (event) => {
+            if (event.x >= this.x && event.x <= this.x + this.monkeyWidth &&
+                event.y >= this.y && event.y <= this.y + this.monkeyHeight
+            ) {
+                this.killMonkey(this.id);
+            }
+        })
+
         window.addEventListener('resize', (event) => {
             this.getPlaygroundDimensions();
         })

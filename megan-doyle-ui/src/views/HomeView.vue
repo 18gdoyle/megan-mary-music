@@ -41,6 +41,12 @@ export default {
         audio.play();
         this.firstClick = false;
       }
+    });
+    window.addEventListener('touchstart', () => {
+      if (this.firstClick) {
+        audio.play();
+        this.firstClick = false;
+      }
     })
   },
   methods: {
