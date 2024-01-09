@@ -28,8 +28,8 @@ export default {
 
         const monkey = document.getElementById(this.id);
         monkey.onload = () => {
-            this.x = this.getRandomInt(window.innerHeight - monkey.height);
-            this.y = this.getRandomInt(window.innerWidth - monkey.width);
+            this.x = this.getRandomInt(this.monkeyPlaygroundBottom - monkey.height);
+            this.y = this.getRandomInt(this.monkeyPlaygroundRight - monkey.width);
             this.animateMonkey(monkey);
         }
         monkey.src = '/monkey1.png'
