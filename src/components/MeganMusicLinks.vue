@@ -1,13 +1,13 @@
 <template>
     <img src="/meganProfile.jpg" class="profileImage" />
     <div class="buttonsContainer">
-        <a class="socialMediaButtonLong" href="https://www.youtube.com/channel/UCRtWYgXZ6n9Q5Jl__LrL5JQ"
+        <a class="socialMediaButtonLong" href="https://www.youtube.com/@MeganMaryMusic"
             target="_blank">
             <i class="fa-brands fa-youtube socialMediaIcon"></i>
             <p class="siteTitle">YOUTUBE</p>
             <i class="fa-brands fa-youtube socialMediaIcon"></i>
         </a>
-        <a class="socialMediaButtonLong" href="https://soundcloud.com/lilac-rust" target="_blank">
+        <a class="socialMediaButtonLong" href="https://soundcloud.com/megan-mary-music" target="_blank">
             <i class="fa-brands fa-soundcloud socialMediaIcon"></i>
             <p class="siteTitle">SOUNDCLOUD</p>
             <i class="fa-brands fa-soundcloud socialMediaIcon"></i>
