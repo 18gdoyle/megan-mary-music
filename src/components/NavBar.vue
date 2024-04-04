@@ -15,18 +15,7 @@
             </div>
         </div>
         <div id="title">
-            <a href="/" class="hover-underline-animation">Megan Mary</a>
-        </div>
-        <div id="pages">
-            <div class="pageOption">
-                <a href="/music" class="hover-underline-animation">Music</a>
-            </div>
-            <div class="pageOption">
-                <a href="/merch" class="hover-underline-animation">Merch</a>
-            </div>
-            <div class="pageOption">
-                <a href="/monkey" class="hover-underline-animation">Monkey</a>
-            </div>
+            <a href="/">Megan Mary</a>
         </div>
     </div>
 </template>
@@ -47,14 +36,6 @@ export default {
 </script>
 
 <style scoped>
-.nav-container {
-    display: none;
-}
-
-.menu-items {
-    display: none;
-}
-
 #navBar {
     position: fixed;
     top: 0;
@@ -73,148 +54,127 @@ export default {
 #title {
     color: white;
     font-size: xx-large;
-    padding-left: 1%;
-    width: 30%;
+    width: 100vw;
     height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#pages {
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: right;
     padding-right: 1%;
 }
 
-.pageOption {
-    padding: 1%;
-    color: white;
-    font-size: large;
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
 }
 
-@media (max-width: 850px) {
-    #pages {
-        display: none;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+}
+
+.menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: max(70px, 9vh);
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    height: 100%;
+    width: 20vw;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-items {
+        width: 50%;
     }
 
     #title {
-        justify-content: right;
-        padding-right: 5%;
-        width: 100%;
+        padding-right: 2%;
     }
-
-    .nav-container {
-        display: block;
-        position: relative;
-        height: 60px;
-    }
-
-    .menu-items {
-        display: flex;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .nav-container .checkbox {
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 32px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
-    }
-
-    .nav-container .hamburger-lines {
-        display: block;
-        height: 26px;
-        width: 32px;
-        position: absolute;
-        top: 17px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .nav-container .hamburger-lines .line {
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: white;
-    }
-
-    .nav-container .hamburger-lines .line1 {
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-container .hamburger-lines .line2 {
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .nav-container .hamburger-lines .line3 {
-        transform-origin: 0% 100%;
-        transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-container input[type="checkbox"]:checked~.menu-items {
-        transform: translateX(0);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
-        transform: rotate(45deg);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
-        transform: scaleY(0);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
-        transform: rotate(-45deg);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.logo {
-        display: none;
-    }
-
-    .menu-items {
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding-top: 8vh;
-        background: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(15px);
-        height: 100vh;
-        width: 60vw;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-        transition: transform 0.5s ease-in-out;
-        z-index: 10;
-    }
-
-    .menu-items li {
-        margin-bottom: 1.2rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-
 }
 </style>

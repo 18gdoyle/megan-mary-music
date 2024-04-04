@@ -1,5 +1,19 @@
+<script setup>
+import MeganMusicLinks from '@/components/MeganMusicLinks.vue'
+</script>
 <template>
-    <div style="margin-top: 8vh; padding: 2%;">
-        Music Page
+    <div class="page">
+        <MeganMusicLinks></MeganMusicLinks>
     </div>
 </template>
+
+<style scoped>
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: max(8vh, 50px);
+    padding: 2%;
+}
+</style>
