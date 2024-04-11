@@ -1,5 +1,5 @@
 <template>
-    <img src="/meganProfile.jpg" class="profileImage" />
+    <img src="/meganProfile.jpg" alt="meganProfile" class="profileImage" />
     <div class="iconsRow">
         <a class="socialMediaButton" href="https://www.tiktok.com/@megan..mary" target="_blank">
             <i class="fa-brands fa-tiktok socialMediaIcon centered"></i>

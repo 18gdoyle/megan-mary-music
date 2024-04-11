@@ -5,7 +5,7 @@ import MeganMusicLinks from '@/components/MeganMusicLinks.vue'
 <template>
   <div class="page">
     <div class="albumContainer">
-      <img class="albumArt" src="/mountainsAlbumArt.jpg"
+      <img class="albumArt" alt="albumArt" src="/mountainsAlbumArt.jpg"
         @click="goToLink('https://www.youtube.com/watch?v=qvedXSbiW0o')" />
       <h2 class="title">MOUNTAINS</h2>
       <h3 class="subTitle">OUT NOW</h3>

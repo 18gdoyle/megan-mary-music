@@ -1,6 +1,6 @@
 <template>
     <main>
-        <img class="monkey" :id="id" style="position: absolute;" :style="{ left: `${x}px`, top: `${y}px` }" />
+        <img class="monkey" alt="monkey" :id="id" style="position: absolute;" :style="{ left: `${x}px`, top: `${y}px` }" />
     </main>
 </template>
 
