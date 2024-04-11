@@ -1,21 +1,19 @@
 <template>
     <div class="page">
-        <iframe class="iframe" src="https://my-store-f72cb3.creator-spring.com/"></iframe> 
+        <iframe class="iframe" height="100%" width="100%" frameborder="0" src="https://my-store-f72cb3.creator-spring.com/"></iframe> 
     </div>
 </template>
 
 <style scoped>
 .page {
+    position: relative;
     margin-top: max(8vh, 50px);
-    display: flex;
+    height: min(92vh, calc(100vh - 50px));
     justify-content: center;
-    overflow: 0;
+    overflow: hidden;
 }
 
 .iframe {
-    width: 100vw;
-    height: calc(100vh - max(8vh, 50px));
-    border: 0px;
     background: rgb(255, 255, 255);
 }
 </style>

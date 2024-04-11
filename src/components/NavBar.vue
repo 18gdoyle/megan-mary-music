@@ -41,7 +41,7 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8%;
+    height: max(8vh, 50px);
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
