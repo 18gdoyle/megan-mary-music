@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <iframe class="iframe" src="https://my-store-f62ec7.creator-spring.com/"></iframe> 
+        <iframe class="iframe" src="https://my-store-f72cb3.creator-spring.com/"></iframe> 
     </div>
 </template>
 

@@ -10,11 +10,12 @@ import MeganMusicLinks from '@/components/MeganMusicLinks.vue'
       <h2 class="title">MOUNTAINS</h2>
       <h3 class="subTitle">OUT NOW</h3>
       <div class="iconsRow">
-        <a class="socialMediaButton" href="https://www.tiktok.com/@megan..mary" target="_blank">
-          <i class="fa-brands fa-tiktok socialMediaIcon"></i>
+        <a class="socialMediaButton"
+          href="https://open.spotify.com/artist/13d4Uag9uB9ofYkls757GD?si=Dd1YU114SdeifPXeO_eOLw" target="_blank">
+          <i class="fa-brands fa-spotify socialMediaIcon"></i>
         </a>
-        <a class="socialMediaButton" href="https://www.instagram.com/megan0mary/" target="_blank">
-          <i class="fa-brands fa-instagram socialMediaIcon"></i>
+        <a class="socialMediaButton" href="https://music.apple.com/us/artist/megan-mary/1740023382" target="_blank">
+          <i class="fa-brands fa-apple socialMediaIcon"></i>
         </a>
         <a class="socialMediaButton" href="https://www.youtube.com/@MeganMaryMusic" target="_blank">
           <i class="fa-brands fa-youtube socialMediaIcon"></i>
@@ -95,7 +96,7 @@ export default {
   padding-top: 1%;
   display: flex;
   width: 50%;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 600px) {

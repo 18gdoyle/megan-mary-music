@@ -59,7 +59,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: right;
-    padding-right: 1%;
+    padding-right: 20px;
 }
 
 .nav-container {
@@ -174,7 +174,11 @@ a {
     }
 
     #title {
-        padding-right: 2%;
+        padding-right: 10px;
+    }
+
+    .nav-container .hamburger-lines {
+        left: 10px;
     }
 }
 </style>
