@@ -1,5 +1,7 @@
 <template>
-    <img src="/meganProfile.jpg" alt="meganProfile" class="profileImage" />
+    <div class="profileImageContainer">
+        <img src="/meganProfile.jpg" alt="meganProfile" class="profileImage" />
+    </div>
     <div class="iconsRow">
         <a class="socialMediaButton" href="https://www.tiktok.com/@megan..mary" target="_blank">
             <i class="fa-brands fa-tiktok socialMediaIcon centered"></i>
@@ -41,8 +43,16 @@
     border-radius: 50%;
     margin: auto;
     display: inline;
-    width: 20%;
+    width: 100%;
     box-shadow: 20px 20px 22px rgba(0, 0, 0, .2);
+}
+
+.profileImageContainer {
+    width: 20%;
+    height: 0;
+    padding-bottom: 20%;
+    margin: auto;
+    display: inline;
 }
 
 .buttonsContainer {
@@ -69,59 +79,70 @@
 }
 
 .socialMediaButton {
-    height: 10vh;
-    width: 10vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 100vh;
     background-color: #ffffff26;
     backdrop-filter: blur(5px);
     text-align: center;
     color: #fff;
     cursor: pointer;
+    width: 5vw;
+    aspect-ratio: 1;
 }
 
 .iconsRow {
-    padding-top: 1%;
+    padding-top: 2%;
     display: flex;
     width: 50%;
     justify-content: space-evenly;
 }
 
 .centered {
+    width: 100%;
+    text-align: center;
     margin: auto;
 }
 
 .socialMediaIcon {
-    font-size: 300%;
+    font-size: 3vw;
 }
 
 .siteTitle {
-    font-size: xx-large;
+    font-size: 2vw
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .buttonsContainer {
         width: 94%;
     }
 
     .profileImage {
-        width: 60%;
+        width: 100%;
         padding-top: 5%;
+    }
+
+    .profileImageContainer {
+        width: 70%;
+        padding-bottom: 70%;
     }
 
     .iconsRow {
-        padding-top: 5%;
+        padding-top: 10%;
         width: 100%;
     }
 
-    .socialMediaIcon {
-        font-size: 200%;
+    .socialMediaButton {
+        width: 8vh
     }
 
-    .socialMediaButton {
-        height: 8vh;
-        width: 8vh;
+    .socialMediaIcon {
+        font-size: 4vh;
+    }
+
+    .siteTitle {
+        font-size: 5vw
     }
 }
 </style>

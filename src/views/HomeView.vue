@@ -5,8 +5,10 @@ import MeganMusicLinks from '@/components/MeganMusicLinks.vue'
 <template>
   <div class="page">
     <div class="albumContainer">
-      <img class="albumArt" alt="albumArt" src="/mountainsAlbumArt.jpg"
-        @click="goToLink('https://www.youtube.com/watch?v=qvedXSbiW0o')" />
+      <div class="albumArtContainer">
+        <img class="albumArt" alt="albumArt" src="/mountainsAlbumArt.jpg"
+          @click="goToLink('https://www.youtube.com/watch?v=qvedXSbiW0o')" />
+      </div>
       <h2 class="title">MOUNTAINS</h2>
       <h3 class="subTitle">OUT NOW</h3>
       <div class="iconsRow">
@@ -49,9 +51,15 @@ export default {
 }
 
 .albumArt {
-  width: 30%;
-  border-radius: 40px;
+  width: 100%;
+  border-radius: 15px;
   cursor: pointer;
+}
+
+.albumArtContainer {
+  width: max(30%, 500px);
+  height: 0;
+  padding-bottom: max(30%, 500px);
 }
 
 .albumContainer {
@@ -60,12 +68,17 @@ export default {
   align-items: center;
   padding: 2%;
   flex-direction: column;
+  width: 80%;
 }
 
 .title {
-  font-size: xx-large;
+  font-size: 2.5vw;
   color: white;
   padding-top: 2%;
+}
+
+.subTitle {
+  font-size: 1vw;
 }
 
 .sectionTitle {
@@ -75,21 +88,21 @@ export default {
 }
 
 .socialMediaIcon {
-  font-size: 300%;
-  margin: auto;
+  font-size: 3vw;
 }
 
 .socialMediaButton {
-  height: 10vh;
-  width: 10vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 100vh;
   background-color: #ffffff26;
   backdrop-filter: blur(5px);
   text-align: center;
   color: #fff;
   cursor: pointer;
+  width: 5vw;
+  aspect-ratio: 1;
 }
 
 .iconsRow {
@@ -99,14 +112,28 @@ export default {
   justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .albumArt {
-    width: 80%;
+    width: 100%;
     border-radius: 15px;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+
+  .subTitle {
+    font-size: 4vw;
+  }
+
+  .albumArtContainer {
+    width: 90%;
+    padding-bottom: 90%;
   }
 
   .albumContainer {
     padding: 5%;
+    width: 100%;
   }
 
   .sectionTitle {
@@ -119,12 +146,11 @@ export default {
   }
 
   .socialMediaButton {
-    height: 8vh;
-    width: 8vh;
+    width: 8vh
   }
 
   .socialMediaIcon {
-    font-size: 200%;
+    font-size: 4vh;
   }
 }
 </style>
