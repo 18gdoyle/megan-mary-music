@@ -9,7 +9,7 @@
         <a class="socialMediaButton" href="mailto:meganmarymusicbiz@gmail.com" target="_blank">
             <i class="fa-regular fa-envelope socialMediaIcon centered"></i>
         </a>
-        <a class="socialMediaButton" href="https://www.instagram.com/megan0mary/" target="_blank">
+        <a class="socialMediaButton" href="https://www.instagram.com/meganmarymusic/" target="_blank">
             <i class="fa-brands fa-instagram socialMediaIcon centered"></i>
         </a>
     </div>
