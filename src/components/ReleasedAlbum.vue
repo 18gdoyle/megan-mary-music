@@ -112,15 +112,15 @@ export default {
     }
 
     .title {
-        font-size: 8vw;
+        font-size: 12vw;
     }
 
     .subTitle {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .iconsRow {
-        padding-top: 5%;
+        padding-top: 2%;
         width: 100%;
     }
 
