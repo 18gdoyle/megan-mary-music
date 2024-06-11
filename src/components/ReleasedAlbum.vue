@@ -1,8 +1,7 @@
 <template>
     <div class="albumContainer">
         <div class="albumArtContainer">
-            <img class="albumArt" alt="albumArt" :src="albumArtURL"
-                @click="goToLink(youtubeURL)" />
+            <img class="albumArt" alt="albumArt" :src="albumArtURL" @click="goToLink(youtubeURL)" />
         </div>
         <h2 class="title">{{ title }}</h2>
         <h3 class="subTitle">OUT NOW</h3>
@@ -62,19 +61,19 @@ export default {
 }
 
 .title {
-    font-size: 2.5vw;
+    font-size: 70px;
     color: white;
-    padding-top: 2%;
+    line-height: 125%;
 }
 
 .subTitle {
-    font-size: 1vw;
+    font-size: 35px;
 }
 
 .iconsRow {
     padding-top: 1%;
     display: flex;
-    width: 50%;
+    width: 90%;
     justify-content: space-evenly;
 }
 
@@ -88,12 +87,12 @@ export default {
     text-align: center;
     color: #fff;
     cursor: pointer;
-    width: 5vw;
+    width: 120px;
     aspect-ratio: 1;
 }
 
 .socialMediaIcon {
-    font-size: 3vw;
+    font-size: 60px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -126,11 +125,12 @@ export default {
     }
 
     .socialMediaButton {
-        width: 8vh
+        width: 20vw;
+        min-width: 70px;
     }
 
     .socialMediaIcon {
-        font-size: 4vh;
+        font-size: 10vw;
     }
 }
 </style>

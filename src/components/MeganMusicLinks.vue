@@ -43,20 +43,17 @@
     border-radius: 50%;
     margin: auto;
     display: inline;
-    width: 100%;
+    width: 500px;
     box-shadow: 20px 20px 22px rgba(0, 0, 0, .2);
 }
 
 .profileImageContainer {
-    width: 20%;
-    height: 0;
-    padding-bottom: 20%;
     margin: auto;
     display: inline;
 }
 
 .buttonsContainer {
-    width: 50%;
+    width: 80%;
     margin-bottom: 5%;
 }
 
@@ -88,15 +85,16 @@
     text-align: center;
     color: #fff;
     cursor: pointer;
-    width: 5vw;
+    width: 120px;
     aspect-ratio: 1;
 }
 
 .iconsRow {
     padding-top: 2%;
     display: flex;
-    width: 50%;
-    justify-content: space-evenly;
+    width: 90%;
+    justify-content: center;
+    gap: 10vw;
 }
 
 .centered {
@@ -106,11 +104,11 @@
 }
 
 .socialMediaIcon {
-    font-size: 3vw;
+    font-size: 60px;
 }
 
 .siteTitle {
-    font-size: 2vw
+    font-size: 50px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -125,24 +123,24 @@
 
     .profileImageContainer {
         width: 70%;
-        padding-bottom: 70%;
     }
 
     .iconsRow {
-        padding-top: 10%;
+        padding-top: 5%;
         width: 100%;
     }
 
     .socialMediaButton {
-        width: 8vh
+        width: 20vw;
+        min-width: 70px;
     }
 
     .socialMediaIcon {
-        font-size: 4vh;
+        font-size: 10vw;
     }
 
     .siteTitle {
-        font-size: 5vw
+        font-size: max(20px, 5vw);
     }
 }
 </style>
