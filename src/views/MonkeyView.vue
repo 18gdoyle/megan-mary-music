@@ -8,10 +8,6 @@ import Monkey from '../components/Monkey.vue'
       <source src="/cycloneClipped.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-    <audio id="alarm">
-      <source src="/alarm.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
     <div v-if="firstClick" style="display: flex; height: 100%; width: 100%; align-items: center; justify-content: center;">
       <h1>READY? CLICK!</h1>
     </div>
@@ -69,8 +65,6 @@ export default {
         this.gameWon = true;
         const audio = document.getElementById("monkeyTime"); 
         audio.pause();
-        //const alarmAudio = document.getElementById('alarm');
-        //alarmAudio.play();
       }
     },
   }
