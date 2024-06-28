@@ -1,8 +1,14 @@
 <template>
     <div class="albumContainer">
         <div class="albumArtContainer">
-            <img class="albumArt" alt="albumArt" :src="albumArtURL" @click="goToLink(youtubeURL)" />
+            <!--<img class="albumArt" alt="albumArt" :src="albumArtURL" @click="goToLink(youtubeURL)" />-->
+            <iframe src="https://www.youtube.com/embed/8fMURmMTAio" title="lucky her"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" class="albumArt" allowfullscreen>
+            </iframe>
         </div>
+        <div class="break"></div>
         <h2 class="title">{{ title }}</h2>
         <h3 class="subTitle">OUT NOW</h3>
         <div class="iconsRow">
@@ -49,13 +55,17 @@ export default {
 }
 
 .albumArtContainer {
-    width: max(30%, 500px);
-    height: 0;
-    padding-bottom: max(30%, 500px);
+    width: 60vw;
+    height: 60vh;
+}
+
+.break {
+    height: 20px;
 }
 
 .albumArt {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -101,9 +111,13 @@ export default {
         width: 100%;
     }
 
+    .break {
+        height: 10px;
+    }
+
     .albumArtContainer {
         width: 90%;
-        padding-bottom: 90%;
+        height: 40vh;
     }
 
     .albumArt {
