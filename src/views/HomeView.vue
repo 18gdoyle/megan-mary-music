@@ -6,16 +6,16 @@ import ReleasedAlbum from '@/components/ReleasedAlbum.vue';
 
 <template>
   <div class="page">
-    <ReleasedAlbum :albumArtURL="'/caterwaulAlbumArt.jpg'" :title="'caterwaul'"
-      :youtubeURL="'https://youtu.be/wz8CMlt75ds'"></ReleasedAlbum>
+    <ReleasedAlbum :albumArtURL="'/luckyHer.jpeg'" :title="'lucky her'" :youtubeURL="'https://youtu.be/8fMURmMTAio'">
+    </ReleasedAlbum>
     <!--
-    <UnreleasedAlbum
-      :albumArtURL="'/caterwaulAlbumArt.jpg'"
-      :preSaveURL="'https://distrokid.com/hyperfollow/meganmary/caterwaul'"
-      :title="'caterwaul'"
-      :releaseDate="'AVAILABLE JUNE 7, 2024'"
-    ></UnreleasedAlbum>
-  -->
+      <UnreleasedAlbum
+        :albumArtURL="'/caterwaulAlbumArt.jpg'"
+        :preSaveURL="'https://distrokid.com/hyperfollow/meganmary/caterwaul'"
+        :title="'caterwaul'"
+        :releaseDate="'AVAILABLE JUNE 7, 2024'"
+      ></UnreleasedAlbum>
+    -->
     <div class="gap"></div>
     <MeganMusicLinks></MeganMusicLinks>
   </div>

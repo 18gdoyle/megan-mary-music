@@ -1,6 +1,6 @@
 <template>
     <div class="profileImageContainer">
-        <img src="/meganProfile.jpg" alt="meganProfile" class="profileImage" />
+        <img src="/meganProfile.jpeg" alt="meganProfile" class="profileImage" />
     </div>
     <div class="iconsRow">
         <a class="socialMediaButton" href="https://www.tiktok.com/@megan..mary" target="_blank">
