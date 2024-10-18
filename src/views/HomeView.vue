@@ -6,7 +6,7 @@ import ReleasedAlbum from '@/components/ReleasedAlbum.vue';
 
 <template>
   <div class="page">
-    <ReleasedAlbum :albumArtURL="'/luckyHer.jpeg'" :title="'lucky her'" :youtubeURL="'https://youtu.be/8fMURmMTAio'">
+    <ReleasedAlbum :title="'dark nights'">
     </ReleasedAlbum>
     <!--
       <UnreleasedAlbum

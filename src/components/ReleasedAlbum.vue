@@ -1,9 +1,8 @@
 <template>
     <div class="albumContainer">
         <div class="albumArtContainer">
-            <!--<img class="albumArt" alt="albumArt" :src="albumArtURL" @click="goToLink(youtubeURL)" />-->
-            <iframe src="https://www.youtube.com/embed/8fMURmMTAio" title="lucky her"
-                frameborder="0"
+            <iframe src="https://www.youtube.com/embed/pmR4hziED5Y"
+                title="Megan Mary - dark nights" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" class="albumArt" allowfullscreen>
             </iframe>
@@ -32,8 +31,6 @@
 <script>
 export default {
     props: {
-        albumArtURL: String,
-        youtubeURL: String,
         title: String,
     },
     methods: {
